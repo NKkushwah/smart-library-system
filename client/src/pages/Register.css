@@ -1,0 +1,65 @@
+/* Background for section */
+.register-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form card */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Input focus effect */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.4);
+}
+
+/* Image styling */
+.register-img {
+  max-width: 90%;
+  border-radius: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Register button small + square */
+.register-btn {
+  width: 45px;             /* square size */
+  height: 45px;
+  border-radius: 8px;       /* slightly rounded */
+  font-size: 16px;          /* text/icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+  margin-left: 0;           /* left aligned */
+}
+
+.register-btn:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}

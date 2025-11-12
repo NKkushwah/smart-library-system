@@ -1,0 +1,77 @@
+/* General About Section */
+.about-section {
+  background: linear-gradient(to right, #f9f9f9, #eef5ff);
+  padding: 60px 0;
+}
+
+/* Title & Subtitle */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.about-subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 10px auto;
+  color: #555;
+}
+
+/* Features Cards (Vertical Stack) */
+.feature-card {
+  border: none;
+  border-radius: 12px;
+  margin: auto;
+  max-width: 600px;   /* Centered vertical shape */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.feature-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.icon-style {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .icon-style {
+  color: #0056b3;
+}
+
+/* Mission & Vision */
+.mission-card, .vision-card {
+  border: none;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover, .vision-card:hover {
+  transform: translateY(-8px);
+}
+
+.mission-card h4, .vision-card h4 {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.mission-card p, .vision-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .feature-card {
+    padding: 20px;
+  }
+}

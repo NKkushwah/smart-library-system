@@ -1,0 +1,81 @@
+/* ========== Navbar Styles ========== */
+header {
+  width: 100%;
+  background: rgb(31, 60, 244);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-brand a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+/* Active link styling */
+nav ul li .active {
+  color: #ffdd57;
+  font-weight: 600;
+  border-bottom: 2px solid #ffdd57;
+  padding-bottom: 3px;
+}
+
+/* ========== Responsive Navbar ========== */
+@media (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: #0c0200;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: right 0.3s ease;
+  }
+
+  nav ul.show {
+    right: 10px;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+}

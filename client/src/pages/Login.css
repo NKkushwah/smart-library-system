@@ -1,0 +1,97 @@
+/* ================= Login Section ================= */
+.login-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2f3, #dfe9f3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ================= Login Form Card ================= */
+.login-form {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= Heading ================= */
+.login-form h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* ================= Input Group ================= */
+.input-group-text {
+  background: #f1f1f1;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  color: #0d6efd;
+  font-size: 18px;
+  padding: 10px 14px;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 0 8px 8px 0;
+  padding: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.4);
+}
+
+/* ================= Button ================= */
+.btn-primary {
+  background: #0d6efd;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+}
+
+/* ================= Image ================= */
+img {
+  max-width: 90%;
+  border-radius: 16px;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= Floating Animation ================= */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .login-form {
+    margin-top: 20px;
+    padding: 1.5rem;
+  }
+
+  .login-form h1 {
+    font-size: 22px;
+  }
+}

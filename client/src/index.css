@@ -1,0 +1,78 @@
+/* Body transparent background */
+body {
+  background-color: transparent !important;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero section styling */
+.hero-section {
+  min-height: 100vh;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa, #e9f1ff);
+}
+
+/* Hero content spacing */
+.hero-content {
+  padding-right: 20px;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Image */
+.hero-img {
+  max-width: 85%;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #0056b3, #00a6d6);
+  transform: translateY(-2px);
+}
+
+/* Learn More button (outline) */
+.btn-outline-light {
+  background-color: #fff !important;
+  border: 2px solid #007bff;
+  color: #000 !important;   /* Text black */
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-outline-light:hover {
+  background-color: #007bff !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .hero-content {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .hero-img {
+    max-width: 95%;
+  }
+}
